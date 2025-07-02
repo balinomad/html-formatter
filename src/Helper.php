@@ -1,6 +1,6 @@
 <?php
 
-namespace Navindex\HtmlFormatter;
+namespace BaliNomad\HtmlFormatter;
 
 abstract class Helper
 {

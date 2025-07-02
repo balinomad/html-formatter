@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace BaliNomad\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Formatter;
-use Navindex\SimpleConfig\Config;
+use BaliNomad\HtmlFormatter\Formatter;
+use BaliNomad\SimpleConfig\Config;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Formatter
+ * @covers \BaliNomad\HtmlFormatter\Formatter
  */
 final class FormatterTest extends TestCase
 {
@@ -18,7 +18,7 @@ final class FormatterTest extends TestCase
      * @dataProvider providerConstructor
      *
      * @param  null|mixed[]                  $config
-     * @param  \Navindex\SimpleConfig\Config $expected
+     * @param  \BaliNomad\SimpleConfig\Config $expected
      * @return void
      */
     public function testConstructor(?array $config, Config $expected)
@@ -30,7 +30,7 @@ final class FormatterTest extends TestCase
     /**
      * @dataProvider providerConfig
      *
-     * @param  null|\Navindex\SimpleConfig\Config|mixed[] $config
+     * @param  null|\BaliNomad\SimpleConfig\Config|mixed[] $config
      * @param  mixed[]                                    $expected
      * @return void
      */

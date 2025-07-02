@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace BaliNomad\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Content;
-use Navindex\HtmlFormatter\Exceptions\IndentException;
-use Navindex\SimpleConfig\Config;
+use BaliNomad\HtmlFormatter\Content;
+use BaliNomad\HtmlFormatter\Exceptions\IndentException;
+use BaliNomad\SimpleConfig\Config;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Content
+ * @covers \BaliNomad\HtmlFormatter\Content
  */
 final class ContentTest extends TestCase
 {
@@ -432,7 +432,7 @@ final class ContentTest extends TestCase
              * Constructor.
              *
              * @param  null|string                   $content Text to be processed
-             * @param  \Navindex\SimpleConfig\Config $config  Configuration settings
+             * @param  \BaliNomad\SimpleConfig\Config $config  Configuration settings
              * @return void
              */
             public function __construct(?string $content, Config $config)

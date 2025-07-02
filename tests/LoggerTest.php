@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace BaliNomad\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Logger;
+use BaliNomad\HtmlFormatter\Logger;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Logger
+ * @covers \BaliNomad\HtmlFormatter\Logger
  */
 final class LoggerTest extends TestCase
 {

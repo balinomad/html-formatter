@@ -1,8 +1,8 @@
 <?php
 
-namespace Navindex\HtmlFormatter;
+namespace BaliNomad\HtmlFormatter;
 
-use Navindex\SimpleConfig\Config;
+use BaliNomad\SimpleConfig\Config;
 
 /**
  * Formatter class.
@@ -89,7 +89,7 @@ class Formatter
     /**
      * Configuration settings.
      *
-     * @var \Navindex\SimpleConfig\Config
+     * @var \BaliNomad\SimpleConfig\Config
      */
     protected $config;
 
@@ -109,7 +109,7 @@ class Formatter
     /**
      * Sets the formatter config.
      *
-     * @param  null|\Navindex\SimpleConfig\Config|mixed[] $config Associative array of option names and values
+     * @param  null|\BaliNomad\SimpleConfig\Config|mixed[] $config Associative array of option names and values
      * @return self
      */
     public function setConfig($config): self
@@ -124,7 +124,7 @@ class Formatter
     /**
      * Gets the formatter config.
      *
-     * @return \Navindex\SimpleConfig\Config
+     * @return \BaliNomad\SimpleConfig\Config
      */
     public function getConfig(): Config
     {

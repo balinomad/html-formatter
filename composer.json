@@ -1,30 +1,27 @@
 {
-    "name": "navindex/html-formatter",
+    "name": "balinomad/html-formatter",
     "type": "library",
     "description": "HTML beautifier and minifier library for development and testing.",
-    "homepage": "https://github.com/navindex/html-formatter",
+    "homepage": "https://github.com/balinomad/html-formatter",
     "keywords": [
         "beautify",
         "format",
         "HTML",
         "indent",
         "minify",
-        "Navindex",
         "PHP"
     ],
     "license": "MIT",
     "authors": [
         {
             "name": "Miklos Karpati",
-            "email": "mk@navindex.com.au",
-            "homepage": "https://www.navindex.com.au",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.3|^8.0",
         "ext-mbstring": "*",
-        "navindex/simple-config": "^0.2.0"
+        "balinomad/simple-config": "^0.2.0"
     },
     "require-dev": {
         "larapack/dd": "^1.1",
@@ -34,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Navindex\\HtmlFormatter\\": "src/"
+            "BaliNomad\\HtmlFormatter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Navindex\\HtmlFormatter\\Tests\\": "tests/"
+            "BaliNomad\\HtmlFormatter\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -51,11 +48,5 @@
         "check": "Run static analysis",
         "test": "Run unit tests",
         "testonly": "Run a single test"
-    },
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/navindex"
-        }
-    ]
+    }
 }

@@ -1,9 +1,9 @@
-# HTML Formatter [![Latest Version](https://img.shields.io/github/release/navindex/html-formatter?sort=semver&label=version)](https://raw.githubusercontent.com/navindex/html-formatter/master/CHANGELOG.md)
+# HTML Formatter [![Latest Version](https://img.shields.io/github/release/balinomad/html-formatter?sort=semver&label=version)](https://raw.githubusercontent.com/balinomad/html-formatter/master/CHANGELOG.md)
 
-[![Unit tests](https://github.com/navindex/html-formatter/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/navindex/html-formatter/actions/workflows/test.yml)
-[![Code analysis](https://github.com/navindex/html-formatter/actions/workflows/analysis.yml/badge.svg)](https://github.com/navindex/html-formatter/actions/workflows/analysis.yml)
-[![Build Status](https://img.shields.io/travis/navindex/html-formatter?branch=master)](https://app.travis-ci.com/navindex/html-formatter)
-[![Coverage Status](https://coveralls.io/repos/github/navindex/html-formatter/badge.svg?branch=master)](https://coveralls.io/github/navindex/html-formatter?branch=master)
+[![Unit tests](https://github.com/balinomad/html-formatter/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/balinomad/html-formatter/actions/workflows/test.yml)
+[![Code analysis](https://github.com/balinomad/html-formatter/actions/workflows/analysis.yml/badge.svg)](https://github.com/balinomad/html-formatter/actions/workflows/analysis.yml)
+[![Build Status](https://img.shields.io/travis/balinomad/html-formatter?branch=master)](https://app.travis-ci.com/balinomad/html-formatter)
+[![Coverage Status](https://coveralls.io/repos/github/balinomad/html-formatter/badge.svg?branch=master)](https://coveralls.io/github/balinomad/html-formatter?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
 ## 1. What Is It
@@ -28,13 +28,13 @@ If you need to format your code in the development environment, beware that earl
 This package can be installed through [Composer](https://getcomposer.org/).
 
 ```bash
-composer require navindex/html-formatter
+composer require balinomad/html-formatter
 ```
 
 ## 4. Usage
 
 ```php
-use Navindex\HtmlFormatter\Formatter;
+use BaliNomad\HtmlFormatter\Formatter;
 
 $input = 'This is your HTML code.';
 $formatter = new Formatter();
@@ -43,7 +43,7 @@ $output = $formatter->beautify($input);
 
 ## 5. Configuration
 
-`Formatter` is using **[Simple config](https://github.com/navindex/simple-config)** to adjust its configuration settings.
+`Formatter` is using **[Simple config](https://github.com/balinomad/simple-config)** to adjust its configuration settings.
 
 | Name                | Type    | Description                                                                                         |
 | :------------------ | :------ | :-------------------------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ All other elements are treated as block.
 You can set additional inline elements by adding them to the `inline.tag` option.
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use BaliNomad\HtmlFormatter\Formatter;
 
 $formatter = new Formatter();
 $config = $formatter->getConfig();
@@ -113,7 +113,7 @@ All other elements require closing tag.
 You can set additional self-closing elements by adding them to the `self-closing.tag` option.
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use BaliNomad\HtmlFormatter\Formatter;
 
 $formatter = new Formatter();
 $formatter->setConfig($formatter->getConfig()->append('self-closing.tag', ['foo', 'bar']));
@@ -141,7 +141,7 @@ There settings for all the formatted tags are the following:
 You can also change the settings for a specific tag. For example, disabling the `cleanup-empty` setting for the `script` tag looks like this:
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use BaliNomad\HtmlFormatter\Formatter;
 
 $formatter = new Formatter();
 $config = $formatter->getConfig();
@@ -176,7 +176,3 @@ Additional settings for formatted tags are the following:
 ## 7. Credits
 
 Thanks to **[Gajus Kuizinas](https://github.com/gajus)** for originally creating [gajus/dindent](https://github.com/gajus/dindent) and all the other developers who are tirelessly working on it. HTML Formatter was inspired by Dindent.
-
-## 8. About Navindex
-
-Navindex is a web development agency in Melbourne, Australia. You'll find an overview of our cmpany [on our website](https://www.navindex.com.au).

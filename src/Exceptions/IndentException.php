@@ -1,6 +1,6 @@
 <?php
 
-namespace Navindex\HtmlFormatter\Exceptions;
+namespace BaliNomad\HtmlFormatter\Exceptions;
 
 use RuntimeException;
 

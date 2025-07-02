@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Navindex\HtmlFormatter\Tests;
+namespace BaliNomad\HtmlFormatter\Tests;
 
 use Iterator;
-use Navindex\HtmlFormatter\Helper;
-use Navindex\HtmlFormatter\Pattern;
+use BaliNomad\HtmlFormatter\Helper;
+use BaliNomad\HtmlFormatter\Pattern;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Navindex\HtmlFormatter\Helper
+ * @covers \BaliNomad\HtmlFormatter\Helper
  *
- * @uses \Navindex\HtmlFormatter\Pattern
+ * @uses \BaliNomad\HtmlFormatter\Pattern
  */
 final class HelperTest extends TestCase
 {

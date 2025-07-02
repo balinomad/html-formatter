@@ -1,9 +1,9 @@
 <?php
 
-namespace Navindex\HtmlFormatter;
+namespace BaliNomad\HtmlFormatter;
 
-use Navindex\HtmlFormatter\Exceptions\IndentException;
-use Navindex\SimpleConfig\Config;
+use BaliNomad\HtmlFormatter\Exceptions\IndentException;
+use BaliNomad\SimpleConfig\Config;
 
 /**
  * HTML content.
@@ -78,14 +78,14 @@ class Content
     /**
      * Configuration settings.
      *
-     * @var \Navindex\SimpleConfig\Config
+     * @var \BaliNomad\SimpleConfig\Config
      */
     protected $config;
 
     /**
      * Logger instance.
      *
-     * @var \Navindex\HtmlFormatter\Logger|null
+     * @var \BaliNomad\HtmlFormatter\Logger|null
      */
     protected $logger;
 
@@ -93,7 +93,7 @@ class Content
      * Constructor.
      *
      * @param  null|string                   $content Text to be processed
-     * @param  \Navindex\SimpleConfig\Config $config  Configuration settings
+     * @param  \BaliNomad\SimpleConfig\Config $config  Configuration settings
      * @return void
      */
     public function __construct(?string $content, Config $config)
@@ -401,7 +401,7 @@ class Content
      * Run a specific action on the content.
      *
      * @param  string                        $content
-     * @param  \Navindex\SimpleConfig\Config $config
+     * @param  \BaliNomad\SimpleConfig\Config $config
      * @param  string                        $action
      * @param  mixed                         $default
      * @return string
@@ -440,7 +440,7 @@ class Content
      *
      * @return self
      *
-     * @throws \Navindex\HtmlFormatter\Exceptions\IndentException
+     * @throws \BaliNomad\HtmlFormatter\Exceptions\IndentException
      */
     public function indent(): self
     {
