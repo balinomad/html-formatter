@@ -34,7 +34,7 @@ composer require navindex/html-formatter
 ## 4. Usage
 
 ```php
-use Navindex\HTMLFormatter\Formatter;
+use Navindex\HtmlFormatter\Formatter;
 
 $input = 'This is your HTML code.';
 $formatter = new Formatter();
