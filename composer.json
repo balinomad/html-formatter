@@ -1,5 +1,8 @@
 {
     "name": "balinomad/html-formatter",
+    "replace": {
+        "navindex/html-formatter": "self.version"
+    },
     "type": "library",
     "description": "HTML beautifier and minifier library for development and testing.",
     "homepage": "https://github.com/balinomad/html-formatter",
