@@ -1,3 +1,5 @@
+**Archived 2026-11-09.** This repository is no longer maintained. Existing tagged releases remain available. For alternatives, consider `ext-tidy`, `DOMDocument`, or `masterminds/html5`.
+
 # HTML Formatter [![Latest Version](https://img.shields.io/github/release/balinomad/html-formatter?sort=semver&label=version)](https://raw.githubusercontent.com/balinomad/html-formatter/master/CHANGELOG.md)
 
 [![Unit tests](https://github.com/balinomad/html-formatter/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/balinomad/html-formatter/actions/workflows/test.yml)
